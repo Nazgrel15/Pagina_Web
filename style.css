@@ -82,6 +82,45 @@ h2 {
     transform: translateY(-4px);
 }
 
+#redes {
+    background-color: #ffffff;
+    border-left: 6px solid #00bcd4;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 12px rgba(0, 188, 212, 0.1);
+    text-align: center;
+}
+
+#redes p {
+    font-size: 1.05em;
+    margin-bottom: 20px;
+    color: #37474f;
+}
+
+.redes-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.boton-red {
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.boton-red:hover {
+    background-color: #0288d1;
+}
+
+
 .contacto-form label {
     display: block;
     margin-top: 10px;
