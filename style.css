@@ -1,0 +1,80 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; padding: 0;
+            background: #f4f4f4;
+            color: #222;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+        nav {
+            background: #444;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            padding: 15px 0;
+            display: inline-block;
+        }
+        nav a:hover {
+            background: #333;
+        }
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        h2 {
+            color: #222;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .proyectos, .servicios {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .proyecto, .servicio {
+            flex: 1 1 250px;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+        }
+        .contacto-form label {
+            display: block;
+            margin-top: 10px;
+        }
+        .contacto-form input, .contacto-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .contacto-form button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #222;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contacto-form button:hover {
+            background: #444;
+        }
+        @media (max-width: 700px) {
+            .proyectos, .servicios {
+                flex-direction: column;
+            }
+        }
