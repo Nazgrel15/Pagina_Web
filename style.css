@@ -1,91 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0; padding: 0;
-            background: #e3f2fd;
-            color: #263238;
-        }
-        header {
-            background: #222;
-            color: #fff;
-            padding: 30px 0;
-            text-align: center;
-        }
-        nav {
-            background: #444;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 20px;
-            padding: 15px 0;
-            display: inline-block;
-        }
-        nav a:hover {
-            background: #333;
-        }
-        section {
-            max-width: 900px;
-            margin: 40px auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-        h2 {
-            color: #222;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
-        section#proyectos, section#sobre-mi {
-            background: #ffffff;
-            border-left: 6px solid #00bcd4;
-            transition: all 0.3s ease-in-out;
-        }
+:root {
+    --primary-color: #00bcd4;
+    --primary-dark: #0288d1;
+    --background-light: #e3f2fd;
+    --text-dark: #263238;
+    --section-bg: #ffffff;
+    --accent-gray: #f1f1f1;
+}
 
-        section#proyectos:hover, section#sobre-mi:hover {
-            transform: scale(1.01);
-            box-shadow: 0 4px 12px rgba(0, 188, 212, 0.15);
-        }
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0 20px;
+}
 
-        .servicios {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .servicio {
-            flex: 1 1 250px;
-            background: #f9f9f9;
-            padding: 20px;
-            border-radius: 6px;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-        }
-        .contacto-form label {
-            display: block;
-            margin-top: 10px;
-        }
-        .contacto-form input, .contacto-form textarea {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            border-radius: 4px;
-            border: 1px solid #ccc;
-        }
-        .contacto-form button {
-            margin-top: 15px;
-            padding: 10px 20px;
-            background: #222;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .contacto-form button:hover {
-            background: #444;
-        }
-        @media (max-width: 700px) {
-            .proyectos, .servicios {
-                flex-direction: column;
-            }
-        }
+header, footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+nav {
+    background: var(--primary-dark);
+    text-align: center;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 15px 0;
+    display: inline-block;
+    transition: background 0.3s;
+}
+nav a:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+section {
+    background-color: var(--section-bg);
+    border-left: 6px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 12px rgba(0, 188, 212, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+section:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 20px rgba(0, 188, 212, 0.15);
+}
+
+h2 {
+    color: var(--primary-dark);
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.servicios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.servicio {
+    flex: 1 1 250px;
+    background: var(--accent-gray);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 188, 212, 0.06);
+    transition: transform 0.2s;
+}
+.servicio:hover {
+    transform: translateY(-4px);
+}
+
+.contacto-form label {
+    display: block;
+    margin-top: 10px;
+}
+.contacto-form input,
+.contacto-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: 'Poppins', sans-serif;
+}
+.contacto-form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: var(--primary-dark);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.contacto-form button:hover {
+    background: var(--primary-color);
+}
+
+@media (max-width: 700px) {
+    .proyectos,
+    .servicios {
+        flex-direction: column;
+    }
+}
