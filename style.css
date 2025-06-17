@@ -28,19 +28,28 @@ footer {
 
 .portada-sola {
     background-color: var(--primary-color);
-    padding: 0;
+    padding: 40px 0;
     margin-top: 20px;
     border-radius: 10px;
     overflow: hidden;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .portada-sola img {
-    width: 100%;
+    width: 90%;
+    max-width: 800px;
     height: auto;
-    display: block;
-    border-radius: 0;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease;
 }
+
+.portada-sola img:hover {
+    transform: scale(1.02);
+}
+
 
 
 
