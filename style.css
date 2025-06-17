@@ -161,6 +161,26 @@ h2 {
     margin-bottom: 10px;
 }
 
+.capturas-chatbot {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.capturas-chatbot img {
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.capturas-chatbot img:hover {
+    transform: scale(1.03);
+}
+
+
 
 
 .contacto-form label {
