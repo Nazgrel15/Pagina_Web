@@ -27,24 +27,21 @@ footer {
 }
 
 .portada-sola {
-    text-align: center;
     background-color: var(--primary-color);
-    padding: 30px 10px;
-    border-radius: 10px;
+    padding: 0;
     margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
 }
 
 .portada-sola img {
-    max-width: 90%;
-    max-height: 400px;
-    border-radius: 16px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-    transition: transform 0.4s ease;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0;
 }
 
-.portada-sola img:hover {
-    transform: scale(1.03);
-}
 
 
 nav {
