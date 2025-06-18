@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css"/>
+  <title>Mi primer flujo en n8n - Portafolio de Kevin</title>
+</head>
+<body>
+
+  <header>
+    <h1>Mi primer flujo en n8n – Envío de correo con Gmail</h1>
+    <p>Primer paso en mi recorrido aprendiendo automatizaciones con n8n</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="#proceso">Paso a paso</a>
+    <a href="#imagenes">Capturas</a>
+    <a href="#aprendizajes">Aprendizajes</a>
+  </nav>
+
+  <section id="introduccion">
+    <h2>📘 Introducción</h2>
+    <p>En este experimento inicial con n8n creé un flujo sencillo que envía un correo por Gmail. Este ejercicio me permitió familiarizarme con la interfaz, entender qué son los triggers y probar la conexión con una cuenta de correo. Es el primer escalón de mi camino en la automatización de tareas con n8n.</p>
+  </section>
+
+  <section id="proceso">
+    <h2>🛠️ Paso a paso</h2>
+    <ol>
+      <li>🔐 <strong>Registro y acceso:</strong> Me registré en <a href="https://n8n.io" target="_blank">n8n</a> con la prueba gratuita de 14 días y accedí a mi primer "workflow".</li>
+      <li>⚡ <strong>Exploración del espacio de trabajo:</strong> Estudié qué son los <em>triggers</em> (desencadenadores) y me familiaricé con las herramientas del editor.</li>
+      <li>▶️ <strong>Configuración del trigger:</strong> Añadí el nodo <em>“When clicking 'Execute workflow'”</em> para disparar manualmente el flujo.</li>
+      <li>📧 <strong>Acción Gmail:</strong> Agregué un nodo de la app Gmail con la operación "Send Message".</li>
+      <li>✏️ <strong>Relleno de parámetros:</strong> En el nodo Gmail configuré:<br>
+        • <em>To:</em> tu correo de destino<br>
+        • <em>Subject:</em> asunto del mensaje<br>
+        • <em>Message:</em> cuerpo del texto<br>
+        • Además enlacé mi cuenta de Gmail como credencial.</li>
+      <li>🚀 <strong>Ejecutar y verificar:</strong> Hice clic en "Execute workflow" y confirmé en mi bandeja de entrada que el correo llegó correctamente.</li>
+    </ol>
+  </section>
+
+  <section id="imagenes">
+    <h2>📸 Capturas del proceso</h2>
+    <div class="capturas-blog">
+      <img src="images/n8n_workspace.png" alt="Espacio de trabajo vacío en n8n"/>
+      <img src="images/n8n_flow.png" alt="Trigger y nodo Gmail conectados"/>
+      <img src="images/n8n_params.png" alt="Parámetros configurados en Gmail"/>
+      <img src="images/n8n_result.png" alt="Correo recibido en Gmail"/>
+    </div>
+  </section>
+
+  <section id="aprendizajes">
+    <h2>🧠 Aprendizajes</h2>
+    <ul>
+      <li>Comprendí la utilidad de los triggers para iniciar flujos.</li>
+      <li>Aprendí a conectar una credencial Gmail y enviar correos.</li>
+      <li>Me familiaricé con el editor drag-and-drop de n8n.</li>
+      <li>Siento la motivación de expandir este flujo: añadir condicionales y otros servicios.</li>
+    </ul>
+    <p>Este flujo es solo el comienzo. Los siguientes pasos incluyen integrar formularios web, conectar APIs externas y diseñar automatizaciones más complejas.</p>
+  </section>
+
+  <footer>
+    <p>Desarrollado por Kevin Martínez – 2025</p>
+  </footer>
+
+</body>
+</html>
