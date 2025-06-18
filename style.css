@@ -50,6 +50,32 @@ footer {
     transform: scale(1.02);
 }
 
+/* ===== Uniformiza tamaño y estilo de las imágenes en el blog ===== */
+
+.capturas-blog,
+.capturas-chatbot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.capturas-blog img,
+.capturas-chatbot img {
+  flex: 1 1 220px;       /* cada imagen ocupa de 220px como mínimo */
+  max-width: 220px;      /* no crece más allá de 220px */
+  height: 140px;         /* altura fija para todas */
+  object-fit: cover;     /* recorta y centra el contenido */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.capturas-blog img:hover,
+.capturas-chatbot img:hover {
+  transform: scale(1.03);
+}
+
 
 
 
